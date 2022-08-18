@@ -1,0 +1,1 @@
+This small HTML, CSS and JS project shows a 'Our reviews' page allowing you to see multiple reviews of people, and even allowing you to access a random review.

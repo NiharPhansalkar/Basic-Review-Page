@@ -1,0 +1,138 @@
+/* 
+Variables and fonts
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root {
+    --primary-color: rgb(82, 178, 246);
+    --primary-color-a: rgba(82, 178, 246, 0.15);
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+}
+
+/*
+
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: var(--ff-secondary);
+    letter-spacing: 4px;
+    font-size: 2.5rem;
+    color: rgb(65, 63, 63);
+}
+
+/* Underline */
+.underline {
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    height: 0.25rem;
+    width: 6rem;
+    background: var(--primary-color);
+}
+
+/* Image container */
+.imgContainer {
+    position: relative;
+    text-align: center;
+    width: 300px;
+    margin: 0px auto;
+}
+.imgContainer img{
+    width: 150px;
+}
+.imgContainer img{
+    height: 150px;
+    width: 160px;
+    border-radius: 50%;
+}
+
+.imgContainer::before {
+    position: absolute;
+    content: open-quote;
+    color: white;
+    font-size: 3.4rem;
+    background: var(--primary-color);
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    top: 10px;
+}
+.imgContainer::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    left: 84px;
+    bottom: 9px;
+    z-index: -1;
+}
+
+/* Box around review */
+.review {
+    display: block;
+    padding: 22px;
+    height: 440px;
+    width: 600px;
+    margin: 22px auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3),
+                -4px -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Job title/Occupation */
+#occupation {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 8px 0px 12px 0px;
+    color: var(--primary-color);
+}
+.review p {
+    font-family: var(--ff-primary);
+}
+
+/* Buttons */
+.button-container {
+    text-align: center;
+    margin-top: 12px;
+}
+.prev-btn,
+.next-btn {
+    font-size: 1.3rem;
+    border: none;
+    background: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin: 0 0.75rem;
+    margin-top: 12px;
+}
+.surprise {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color-a);
+    color: var(--primary-color);
+    padding: 3px 5px;
+    border-radius: 8px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+/* Utility classes */
+.container {
+    margin: 20vh 0 0 0;
+    line-height: 70px;
+}
+.centre {
+    text-align: center;
+}
+.author {
+    font-family: var(--ff-primary);
+    letter-spacing: 5px;
+    margin-top: 1.5rem;
+}
